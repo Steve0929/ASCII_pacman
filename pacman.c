@@ -66,7 +66,7 @@ void gotoxy(int x, int y) {
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-void printSprite(int x, int y, char *sprite[]){
+void printSprite(int x, int y, char **sprite){
   for (int i = 0; i < sizeof(sprite); i++)
     {
         printf(sprite[i]);
